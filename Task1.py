@@ -33,7 +33,7 @@ posting_list = []
 
 # iteration inside folder
 # assign directory of folder
-directory = r"E:Task1\files"
+directory = r"files"
 
 # iterate over files in
 # that directory
