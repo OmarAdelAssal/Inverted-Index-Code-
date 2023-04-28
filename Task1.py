@@ -33,7 +33,7 @@ posting_list = []
 
 # iteration inside folder
 # assign directory of folder
-directory = r"files"
+directory = r"https://github.com/OmarAdelAssal/Inverted-Index-Code-/tree/main/files"
 
 # iterate over files in
 # that directory
