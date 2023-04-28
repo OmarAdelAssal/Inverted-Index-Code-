@@ -1,11 +1,9 @@
 import os
 import nltk
 from nltk.corpus import stopwords
-
 en_stops = stopwords.words('english')
 
 def tokenizer(file):
-
     current_file = open(file, "r")
 
     for line in current_file:
@@ -17,19 +15,15 @@ def tokenizer(file):
         list_of_words = line_without_sequences.split()
         return list_of_words
 
-
 def stop_words_removal(arr):
     for i in arr:
         if i in en_stops:
             arr.remove(i)
     return arr
 
-
 # driver code 
-
 word = input("ُEnter the word : ")
 posting_list = []
-
 
 # iteration inside folder
 # assign directory of folder
@@ -54,8 +48,6 @@ for filename in os.listdir(directory):
         if word in tokenized_list:
             posting_list.append(filename[3])
 
-
 print(f"word \tposting List")
 print(f'{word}',"\t",posting_list)
-
 #####################################################################
